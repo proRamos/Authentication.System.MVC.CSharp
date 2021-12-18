@@ -24,6 +24,7 @@ namespace Auth.System.MVC.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +45,8 @@ namespace Auth.System.MVC.WebApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseCookiePolicy();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -51,7 +54,10 @@ namespace Auth.System.MVC.WebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
+
+            
         }
     }
 }
