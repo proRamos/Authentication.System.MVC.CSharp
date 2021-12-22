@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.System.MVC.WebApp", "Auth.System.MVC.WebApp.csproj", "{B2D20588-2080-4F2B-8707-3610A7B067AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auth.System.MVC.WebApp", "Auth.System.MVC.WebApp.csproj", "{B2D20588-2080-4F2B-8707-3610A7B067AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nanosoft.Email", "..\Nanosoft.Email\Nanosoft.Email.csproj", "{6880D87D-2819-400B-8446-83ED2F751B1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2D20588-2080-4F2B-8707-3610A7B067AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2D20588-2080-4F2B-8707-3610A7B067AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D20588-2080-4F2B-8707-3610A7B067AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6880D87D-2819-400B-8446-83ED2F751B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6880D87D-2819-400B-8446-83ED2F751B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6880D87D-2819-400B-8446-83ED2F751B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6880D87D-2819-400B-8446-83ED2F751B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

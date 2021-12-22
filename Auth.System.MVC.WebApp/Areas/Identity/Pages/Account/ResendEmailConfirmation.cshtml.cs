@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Nanosoft.Email;
 
 namespace Auth.System.MVC.WebApp.Areas.Identity.Pages.Account
 {
@@ -62,10 +63,19 @@ namespace Auth.System.MVC.WebApp.Areas.Identity.Pages.Account
                 pageHandler: null,
                 values: new { userId = userId, code = code },
                 protocol: Request.Scheme);
-            await _emailSender.SendEmailAsync(
+
+
+
+            LoginToEmail AdminUser = new LoginToEmail("brakafro@gmail.com", "aixenderinixoberufux");
+
+            AdminUser.SendNewEmail(
                 Input.Email,
                 "Confirm your email",
-                $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.",
+                true
+                );
+
+
 
             ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
             return Page();

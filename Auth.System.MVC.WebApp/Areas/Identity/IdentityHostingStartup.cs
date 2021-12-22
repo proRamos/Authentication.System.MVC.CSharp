@@ -21,8 +21,8 @@ namespace Auth.System.MVC.WebApp.Areas.Identity
                         context.Configuration.GetConnectionString("AuthSystemMVCWebAppDbContextConnection")));
 
                 services.AddDefaultIdentity<AuthSystemMVCWebAppUser>(options =>{
-                    options.SignIn.RequireConfirmedAccount = false;
-                    options.SignIn.RequireConfirmedEmail = false;
+                    options.SignIn.RequireConfirmedAccount = true;
+                    options.SignIn.RequireConfirmedEmail = true;
                     options.SignIn.RequireConfirmedPhoneNumber = false;
                     options.Password.RequireUppercase = false;
                     options.Password.RequireLowercase = false;

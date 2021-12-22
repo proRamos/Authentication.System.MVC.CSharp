@@ -961,6 +961,15 @@
           }
         }
       },
+      "Nanosoft.Email/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Nanosoft.Email.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Nanosoft.Email.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -3823,6 +3832,18 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Nanosoft.Email/1.1.1": {
+      "sha512": "jc0GE/aoo8pFcbIQ3eSjT4fk2JochKRiPZL+5zs6YmMTHtZNVt6XXcNxiECwZ4zfHFhyJ7X8eX9gIgYxLlKmgA==",
+      "type": "package",
+      "path": "nanosoft.email/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Nanosoft.Email.dll",
+        "nanosoft.email.1.1.1.nupkg.sha512",
+        "nanosoft.email.nuspec"
       ]
     },
     "Newtonsoft.Json/11.0.2": {
@@ -7458,7 +7479,8 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "Nanosoft.Email >= 1.1.1"
     ]
   },
   "packageFolders": {
@@ -7526,6 +7548,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "Nanosoft.Email": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           }
         },
         "imports": [
