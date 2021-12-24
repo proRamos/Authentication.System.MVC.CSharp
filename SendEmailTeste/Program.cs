@@ -8,7 +8,7 @@ namespace SendEmailTeste
     {
         static void Main(string[] args)
         {
-            LoginToEmail AdminUser = new LoginToEmail("brakafro@gmail.com", "aixenderinixoberufux");
+            LoginToEmail AdminUser = new LoginToEmail("name@mail.com", "******");
 
             AdminUser.SendNewEmail(
                 "ramosprotasio@gmail.com",
