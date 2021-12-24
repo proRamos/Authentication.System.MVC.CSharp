@@ -65,7 +65,7 @@ namespace Auth.System.MVC.WebApp.Areas.Identity.Pages.Account
 
 
 
-            LoginToEmail AdminUser = new LoginToEmail("brakafro@gmail.com", "aixenderinixoberufux"); 
+            LoginToEmail AdminUser = new LoginToEmail("name@mail.com", "******"); 
 
             AdminUser.SendNewEmail(
                 email,
@@ -74,7 +74,7 @@ namespace Auth.System.MVC.WebApp.Areas.Identity.Pages.Account
                 true
                 );
 
-
+// 
             return Page();
         }
 
